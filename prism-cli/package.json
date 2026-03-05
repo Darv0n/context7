@@ -1,0 +1,28 @@
+{
+  "name": "prism-cli",
+  "version": "1.0.0",
+  "description": "PRISM 1.0 — Product Research & Interaction Strategy Model CLI",
+  "type": "module",
+  "bin": {
+    "prism": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 dist/index.js",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
